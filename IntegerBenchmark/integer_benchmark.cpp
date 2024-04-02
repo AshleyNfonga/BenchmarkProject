@@ -12,4 +12,10 @@ void RunCalculations(){
             result = 1 + 1;
         }
     }
+
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < pow(10,9); j++){
+            result = 1 * 1;
+        }
+    }
 }
