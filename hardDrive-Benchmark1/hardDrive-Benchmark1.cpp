@@ -21,5 +21,12 @@ void HardDriveBenchmark1(){
     for(int i = 0; i < loop; i++){
         file.read(txt, 100);
     }
+}
 
+int main(){
+
+    char text[100];
+    for(int i = 0; i < 100; i++){
+        text[i] = 'a';
+    }
 }
