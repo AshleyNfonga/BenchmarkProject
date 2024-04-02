@@ -28,4 +28,14 @@ void HardDriveBenchmark1(char * txt){
          text[i] = 'a';
      }
 
- }
+ auto start = high_resolution_clock::now();
+
+    HardDriveBenchmark1(text);
+
+    auto stop = high_resolution_clock::now();
+
+    auto runTime = duration_cast<milliseconds>(stop-start);
+
+    double seconds = runTime.count() / 1000.0;
+    int minutes = seconds / 60;
+  }
