@@ -13,13 +13,13 @@ void HardDriveBenchmark1(){
     int loop = pow(10, 7);
 
     for(int i = 0; i < loop; i++){
-
+        file.write(txt, 100);
     }
 
     file.seekg(0);
 
     for(int i = 0; i < loop; i++){
-
+        file.read(txt, 100);
     }
 
 }
