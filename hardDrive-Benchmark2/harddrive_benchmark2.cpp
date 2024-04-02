@@ -15,4 +15,9 @@ void HardDriveBenchmark1(char * txt){
     for(int i = 0; i < loop; i++){
         file.write(txt, 10000);
     }
+    file.seekg(0);
+    for(int i = 0; i < loop; i++){
+       file.read(txt, 1000);
+    }
+    file.close();
  }
