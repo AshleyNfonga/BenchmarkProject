@@ -29,4 +29,13 @@ int main(){
     for(int i = 0; i < 100; i++){
         text[i] = 'a';
     }
+
+    auto start = high_resolution_clock::now();
+
+    HardDriveBenchmark1(text);
+
+    auto stop = high_resolution_clock::now();
+
+    auto runtTime = duration_cast<milliseconds>(stop-start);
+
 }
