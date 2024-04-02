@@ -23,7 +23,17 @@ void RunCalculations(){
     for(int i = 0; i < 10; i++){
         for(int j = 0; j < pow(10,9); j++){
             result = 1.0 / 1.0;
-        
         }
     }
+
+int main(){
+
+    auto start = high_resolution_clock::now();
+
+    RunCalculations();
+
+    auto stop = high_resolution_clock::();
+
+    auto runTime = duration_cast<milliseconds>(stop-start);
+}
 }
