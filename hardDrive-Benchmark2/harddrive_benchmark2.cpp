@@ -21,3 +21,11 @@ void HardDriveBenchmark1(char * txt){
     }
     file.close();
  }
+
+ int main(){
+     char text[10000];
+     for(int i = 0; i < 10000; i++){
+         text[i] = 'a';
+     }
+
+ }
