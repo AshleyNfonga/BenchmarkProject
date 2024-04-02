@@ -36,6 +36,9 @@ int main(){
 
     auto runtime = duration_cast<milliseconds>(stop-start);
 
+    double seconds = runTime.count() / 1000.0;
+    int minutes = seconds / 60;
 
-    
+    cout << minutes << " m " << std::fmod(seconds, 60) << " s\n";
+
 }
