@@ -25,3 +25,12 @@ void RunCalculations(){
         }
     }
 }
+
+int main(){
+
+    auto start = high_resolution_clock::();
+
+    RunCalculations();
+
+    auto stop = high_resolution_clock::now();
+}
