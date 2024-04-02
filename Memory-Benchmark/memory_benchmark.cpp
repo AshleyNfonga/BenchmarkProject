@@ -15,4 +15,13 @@ void MemoryBenchmark(){
             num = *(nums + j);
         }
     }
+
+    for(i = 0; i < 5; i++){
+        for(j = 0; j < ARRAY_SIZE; j++){
+            *(nums + j) = 1;
+        }
+    }
+
+    delete [] nums;
+
 }
